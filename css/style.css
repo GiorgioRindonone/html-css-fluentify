@@ -7,7 +7,7 @@
 .padding-resize{
   /* padding: 40px 40px; */
   /* margin-left: : 400px; */
-  background-color: blue;
+  background-color: rgb(30, 65, 114);
   width: 100%;
   height: 400px;
 }
@@ -19,40 +19,39 @@
   margin:0 auto;
   padding-top: 20px;
   position: relative;
-  background-color: #333;
+  /* background-color: #333; */
   overflow: hidden;
 }
 
 /* Stile nel navigation bar */
 .topnav a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+
+}
+.topnav li {
   float: left;
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   /* font-size: 17px; */
   text-transform: uppercase;
-  font-family: sans-serif;
   font-size: 14px;
   border-radius: 5px;
-}
+  }
 
 /* cambio colore all'hover */
-.topnav a:hover {
+.topnav li:hover {
   background-color: lightblue;
 }
-
-/* Add a color to the active/current link */
-/* .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-} */
 
 /* spazio per il logo a sx */
 .topnav-left img{
   padding-right: 40px;
 }
-.topnav-left a, img {
+.topnav-left li, img {
   float: left;
 }
 
@@ -60,11 +59,12 @@
 .topnav-right {
   float: right;
 }
-.topnav-right a{
+.topnav-right li{
+  display: inline-block;
   margin-left:  30px;
 }
 
-.topnav-right a:nth-child(2){
+.topnav-right li:nth-child(2){
   border-color: white;
   border: solid 1px;
   border-radius: 5px;
@@ -72,6 +72,12 @@
   padding-right: 40px;
 }
 
-.topnav-right a:last-child{
+.topnav-right li:last-child{
   background-color: green;
+}
+
+.topnav:after{
+  content: attr();
+  clear: both;
+  display: table;
 }
