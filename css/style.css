@@ -4,14 +4,27 @@
   box-sizing: border-box;
 }
 
+/* regole generali pagina */
+/*  */
+
+.bordopagina{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testosito{
+  font-family: sans-serif;
+}
+
+/*  */
+
 .padding-resize{
   /* padding: 40px 40px; */
   /* margin-left: : 400px; */
   background-color: rgb(30, 65, 114);
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
 }
-
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -20,13 +33,11 @@
   padding-top: 20px;
   position: relative;
   /* background-color: #333; */
-  overflow: hidden;
 }
 
 /* Stile nel navigation bar */
 .topnav a {
   text-decoration: none;
-  font-family: sans-serif;
   color: white;
 
 }
@@ -35,7 +46,7 @@
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 16px;
   /* font-size: 17px; */
   text-transform: uppercase;
   font-size: 14px;
@@ -73,11 +84,81 @@
 }
 
 .topnav-right li:last-child{
-  background-color: green;
+  background-color:rgb(112, 200, 23);
 }
 
-.topnav:after{
-  content: attr();
+.topnav::after{
+  content: '';
   clear: both;
   display: table;
+}
+
+/* fine navigation bar menu */
+
+
+/* titolo nell'header */
+.titolo {
+  position: relative;
+  height: 500px;
+  background-color:  rgb(30, 65, 114);
+  background-image: url(../img/fluentify-jumbo.png);
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  /* background-position: right bottom; */
+  background-position: 110% 100%;
+}
+
+.titolocontenuto{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titolo h1{
+ font-family: sans-serif;
+ color: white;
+ font-size: 50px;
+ display: block;
+}
+
+.titolo a{
+  margin-top: 30px;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: rgb(112, 200, 23);
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+/* sezione grigia */
+
+.sezionegrigia{
+  height: 150px;
+  background-color: rgb(237, 237, 237);
+  position: relative;
+
+  }
+
+.testosezgrigia{
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  }
+.testosezgrigia h2{
+  color: black;
+  font-size: 30px;
+}
+
+.testosezgrigia p{
+  color: rgb(175, 175, 175);
+  font-size: 20px;
 }
