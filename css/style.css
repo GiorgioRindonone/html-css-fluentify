@@ -162,3 +162,46 @@
   color: rgb(175, 175, 175);
   font-size: 20px;
 }
+
+/* WARNING: inizio sezione 3 colonne */
+.containercolonna{
+  text-align: center;
+
+}
+.colonna {
+  display: inline-block;
+  /* height: 400px; */
+  width: 24%;
+  margin: 20px 2%;
+  /* background-color: pink; */
+}
+
+.colonnasvg1 {
+  background-image: url(../img/fluentify-piano.svg);
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.colonnasvg2 {
+  background-image: url(../img/fluentify-affiancamento.svg);
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.colonnasvg3 {
+  background-image: url(../img/fluentify-monitora.svg);
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.colonna h4{
+  display: block;
+  font-size: 28px;
+  color: rgb(112, 200, 23);
+}
+
+.colonna hr{
+  width: 80px;
+  margin: 30px auto;
+}
